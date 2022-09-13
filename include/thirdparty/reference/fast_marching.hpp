@@ -5,13 +5,13 @@
 #include <algorithm>
 #include <limits>
 
-#include <Globals.h>
-#include <Image.H>
-#include <PriorityQueue.h>
+// #include <Globals.h>
+// #include <Image.H>
+// #include <PriorityQueue.h>
 
 // const float EPS = 1e-6f;
 
-using namespace Images;
+// using namespace Images;
 
 namespace levelset
 {
