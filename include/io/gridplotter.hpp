@@ -63,8 +63,13 @@ public:
     {
         std::array<unsigned int, 2> d = grid.getDimSizes();
         CImg<bool> img(d[0], d[1], 1, 1, 0);
+
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXY(img, x, y) { img(x, y) = !grid[img.width() * (img.height() - y - 1) + x].isOccupied(); }
+        cimg_forXY(img, x, y)
+        {
+            img(x, y) = !grid[img.width() * (img.height() - y - 1) + x].isOccupied();
+        }
+
         // Code for not-inverted Y axis.
         // cimg_forXY(img,x,y) { if(grid[img.width()*y+x].getOccupancy() > 0.5) img(x,y) = true;
         //                      else img(x,y) = false; }
@@ -87,7 +92,11 @@ public:
         std::array<unsigned int, 2> d = grid.getDimSizes();
         CImg<double> img(d[0], d[1], 1, 1, 0);
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXY(img, x, y) { img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255; }
+        cimg_forXY(img, x, y)
+        {
+            img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255;
+        }
+
         name += " Occupancy Map";
         img.display(name.c_str(), false);
     }
@@ -108,7 +117,11 @@ public:
         double max_val = grid.getMaxValue();
         CImg<double> img(d[0], d[1], 1, 1, 0);
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXY(img, x, y) { img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getValue() / max_val * 255; }
+        cimg_forXY(img, x, y)
+        {
+            img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getValue() / max_val * 255;
+        }
+
         img.map(CImg<double>::jet_LUT256());
         name += " Grid values";
         img.display(name.c_str(), false);
@@ -130,7 +143,10 @@ public:
         CImg<double> img(d[0], d[1], 1, 3, 0);
 
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXYZC(img, x, y, z, c) { img(x, y, z, c) = (!grid[img.width() * (img.height() - y - 1) + x].isOccupied()) * 255; }
+        cimg_forXYZC(img, x, y, z, c)
+        {
+            img(x, y, z, c) = (!grid[img.width() * (img.height() - y - 1) + x].isOccupied()) * 255;
+        }
 
         for (unsigned int i = 0; i < path.size(); ++i)
         {
@@ -157,7 +173,10 @@ public:
         std::array<unsigned int, 2> d = grid.getDimSizes();
         CImg<double> img(d[0], d[1], 1, 3, 0);
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXYZC(img, x, y, z, c) { img(x, y, z, c) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255; }
+        cimg_forXYZC(img, x, y, z, c)
+        {
+            img(x, y, z, c) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255;
+        }
 
         for (unsigned int i = 0; i < path.size(); ++i)
         {
@@ -184,7 +203,10 @@ public:
         CImg<double> img(d[0], d[1], 1, 3, 0);
 
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXYZC(img, x, y, z, c) { img(x, y, z, c) = (!grid[img.width() * (img.height() - y - 1) + x].isOccupied()) * 255; }
+        cimg_forXYZC(img, x, y, z, c)
+        {
+            img(x, y, z, c) = (!grid[img.width() * (img.height() - y - 1) + x].isOccupied()) * 255;
+        }
 
         // Draw the path using different colours
         for (unsigned int j = 0; j < paths.size(); ++j)
@@ -217,7 +239,10 @@ public:
         CImg<double> img(d[0], d[1], 1, 1, 0);
 
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
-        cimg_forXY(img, x, y) { img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getValue() / max_val * 255; }
+        cimg_forXY(img, x, y)
+        {
+            img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getValue() / max_val * 255;
+        }
 
         for (unsigned int i = 0; i < path.size(); ++i)
             img(static_cast<unsigned int>(path[i][0]), (img.height() - static_cast<unsigned int>(path[i][1]) - 1)) = 255;

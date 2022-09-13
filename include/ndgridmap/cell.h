@@ -36,14 +36,33 @@ class Cell
 
 public:
     /** \brief Default constructor: sets value_ to -1 and occupancy_ to true (clear cell, not occupied). */
-    Cell() : value_(-1), occupancy_(1) {}
+    Cell() : value_(-1), occupancy_(1)
+    {
+    }
 
-    Cell(double v, double o = 1) : value_(v), occupancy_(o) {}
+    Cell(double v, double o = 1) : value_(v), occupancy_(o)
+    {
+    }
 
-    virtual inline void setValue(double v) { value_ = v; }
-    virtual inline void setOccupancy(double o) { occupancy_ = o; }
-    virtual std::string type() { return std::string("Cell - Basic cell"); }
-    virtual inline void setIndex(int i) { index_ = i; }
+    virtual inline void setValue(double v)
+    {
+        value_ = v;
+    }
+
+    virtual inline void setOccupancy(double o)
+    {
+        occupancy_ = o;
+    }
+
+    virtual std::string type()
+    {
+        return std::string("Cell - Basic cell");
+    }
+
+    virtual inline void setIndex(int i)
+    {
+        index_ = i;
+    }
 
     /** \brief Sets default values for the cell. Concretely, restarts value_ = -1 but
         occupancy_ is not modified. */

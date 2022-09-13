@@ -47,7 +47,9 @@ class BenchmarkCFG
 {
 public:
     /** \brief Requires readOptions to be manually called after this constructor. */
-    BenchmarkCFG() {}
+    BenchmarkCFG()
+    {
+    }
 
     /** \brief Creates an object from a CFG file. Automatically calls readOptions. */
     BenchmarkCFG(const char *filename)

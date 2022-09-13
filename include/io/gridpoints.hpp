@@ -63,9 +63,15 @@ public:
         CImg<double> img(d[0], d[1], 1, 1, 0);
         if (flipY)
             // Filling the image flipping Y dim. We want now top left to be the (0,0).
-            cimg_forXY(img, x, y) { img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255; }
+            cimg_forXY(img, x, y)
+            {
+                img(x, y) = grid[img.width() * (img.height() - y - 1) + x].getOccupancy() * 255;
+            }
         else
-            cimg_forXY(img, x, y) { img(x, y) = grid[img.width() * y + x].getOccupancy(); }
+            cimg_forXY(img, x, y)
+            {
+                img(x, y) = grid[img.width() * y + x].getOccupancy();
+            }
 
         CImgDisplay main_disp(img, "Click a point");
 

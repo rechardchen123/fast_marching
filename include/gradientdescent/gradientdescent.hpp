@@ -65,7 +65,10 @@ public:
         IMPORTANT NOTE: both minimum and initial index cannot be in the
         border of the map. This situation is not checked. We recommend to set a 1 pixel
         black border around the map image. */
-    static void apply(grid_t &grid, unsigned int &idx, Path &path, std::vector<double> &path_velocity, double step = 1)
+
+    static void apply(grid_t &grid, unsigned int &idx,
+                      Path &path, std::vector<double> &path_velocity,
+                      double step = 1)
     {
         Coord current_coord;
         Point current_point;

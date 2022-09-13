@@ -43,11 +43,15 @@ class FSM : public EikonalSolver<grid_t>
 public:
     FSM(unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : EikonalSolver<grid_t>("FSM"),
                                                                      sweeps_(0),
-                                                                     maxSweeps_(maxSweeps) {}
+                                                                     maxSweeps_(maxSweeps)
+    {
+    }
 
     FSM(const char *name, unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : EikonalSolver<grid_t>(name),
                                                                                        sweeps_(0),
-                                                                                       maxSweeps_(maxSweeps) {}
+                                                                                       maxSweeps_(maxSweeps)
+    {
+    }
 
     /** \brief Sets and cleans the grid in which operations will be performed.
          Since a maximum number of dimensions is assumed, fills the rest with size 1. */

@@ -59,10 +59,14 @@ class FM2Star : public FM2<grid_t, heap_t>
 
 public:
     /** \brief maxDistance sets the velocities map saturation distance in real units (before normalization). */
-    FM2Star(HeurStrategy heurStrategy = TIME, double maxDistance = -1) : FM2Base("FM2*", maxDistance), heurStrategy_(heurStrategy) {}
+    FM2Star(HeurStrategy heurStrategy = TIME, double maxDistance = -1) : FM2Base("FM2*", maxDistance), heurStrategy_(heurStrategy)
+    {
+    }
 
     /** \brief maxDistance sets the velocities map saturation distance in real units (before normalization). */
-    FM2Star(const char *name, HeurStrategy heurStrategy = TIME, double maxDistance = -1) : FM2Base(name, maxDistance), heurStrategy_(heurStrategy) {}
+    FM2Star(const char *name, HeurStrategy heurStrategy = TIME, double maxDistance = -1) : FM2Base(name, maxDistance), heurStrategy_(heurStrategy)
+    {
+    }
 
     /** \brief Overloaded from FM2. In this case the precomputeDistances() method is called. */
     virtual void setInitialAndGoalPoints(const std::vector<unsigned int> &init_points, unsigned int goal_idx)

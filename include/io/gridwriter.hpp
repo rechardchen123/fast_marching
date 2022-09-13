@@ -115,7 +115,9 @@ public:
 
         Use the parsegrid.m and parsepath.m Matlab scripts to parse the data. */
     template <class T, size_t ndims>
-    static void savePath(const char *filename, nDGridMap<T, ndims> &grid, std::vector<std::array<double, ndims>> &path)
+    static void savePath(const char *filename,
+                         nDGridMap<T, ndims> &grid,
+                         std::vector<std::array<double, ndims>> &path)
     {
         std::ofstream ofs;
         ofs.open(filename, std::ofstream::out | std::ofstream::trunc);
@@ -150,7 +152,10 @@ public:
 
         Use the parsegrid.m and parsepathvelocity.m Matlab scripts to parse the data. */
     template <class T, size_t ndims>
-    static void savePathVelocity(const char *filename, nDGridMap<T, ndims> &grid, std::vector<std::array<double, ndims>> &path, std::vector<double> path_velocity)
+    static void savePathVelocity(const char *filename,
+                                 nDGridMap<T, ndims> &grid,
+                                 std::vector<std::array<double, ndims>> &path,
+                                 std::vector<double> path_velocity)
     {
         std::ofstream ofs;
         ofs.open(filename, std::ofstream::out | std::ofstream::trunc);

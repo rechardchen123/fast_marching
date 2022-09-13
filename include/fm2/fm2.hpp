@@ -164,6 +164,7 @@ public:
         @param path_velocity velocity the resulting path (output).
         @param goal_idx index of the goal point, where gradient descent will start. If
                no specified, the previously set goal point is used. */
+
     virtual void computePath(path_t *p, std::vector<double> *path_velocity, double step = 1)
     {
         path_t *path_ = p;

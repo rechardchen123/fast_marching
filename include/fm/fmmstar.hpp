@@ -72,7 +72,9 @@ public:
         //    name_ = "FMMStarFib";
     }
 
-    FMMStar(const char *name, HeurStrategy h = TIME) : FMMBase(name, h) {}
+    FMMStar(const char *name, HeurStrategy h = TIME) : FMMBase(name, h)
+    {
+    }
 };
 
 #endif /* FMMSTAR_HPP_*/

@@ -77,9 +77,14 @@ public:
         //    name_ = "FMMFib";
     }
 
-    FMM(const char *name, HeurStrategy h = NOHEUR) : EikonalSolver<grid_t>(name), heurStrategy_(h), precomputed_(false) {}
+    FMM(const char *name, HeurStrategy h = NOHEUR) : EikonalSolver<grid_t>(name), heurStrategy_(h), precomputed_(false)
+    {
+    }
 
-    virtual ~FMM() { clear(); }
+    virtual ~FMM()
+    {
+        clear();
+    }
 
     /** \brief Executes EikonalSolver setup and sets maximum size for the narrow band. */
     virtual void setup()

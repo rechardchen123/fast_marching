@@ -44,28 +44,77 @@ class FMCell : public Cell
 
 public:
     /** \brief Default constructor which performs and implicit Fast Marching-like initialization of the grid. */
-    FMCell() : Cell(std::numeric_limits<double>::infinity(), 1), state_(FMState::OPEN), bucket_(0), hValue_(0) {}
+    FMCell() : Cell(std::numeric_limits<double>::infinity(), 1), state_(FMState::OPEN), bucket_(0), hValue_(0)
+    {
+    }
 
-    virtual ~FMCell() {}
+    virtual ~FMCell()
+    {
+    }
 
-    virtual inline void setVelocity(double v) { occupancy_ = v; }
-    virtual inline void setArrivalTime(double at) { value_ = at; }
-    virtual inline void setHeuristicTime(double hv) { hValue_ = hv; }
-    virtual inline void setState(FMState state) { state_ = state; }
-    virtual inline void setBucket(int b) { bucket_ = b; }
+    virtual inline void setVelocity(double v)
+    {
+        occupancy_ = v;
+    }
+
+    virtual inline void setArrivalTime(double at)
+    {
+        value_ = at;
+    }
+
+    virtual inline void setHeuristicTime(double hv)
+    {
+        hValue_ = hv;
+    }
+
+    virtual inline void setState(FMState state)
+    {
+        state_ = state;
+    }
+
+    virtual inline void setBucket(int b)
+    {
+        bucket_ = b;
+    }
 
     /** \brief Sets default values for the cell. Concretely, restarts value_ = Inf, state_ = OPEN and
         hValue_ = 0 but occupancy_ is not modified. */
     virtual void setDefault();
 
-    std::string type() { return std::string("FMCell - Fast Marching cell"); }
+    std::string type()
+    {
+        return std::string("FMCell - Fast Marching cell");
+    }
 
-    virtual inline double getArrivalTime() const { return value_; }
-    virtual inline double getHeuristicValue() const { return hValue_; }
-    virtual inline double getTotalValue() const { return value_ + hValue_; }
-    virtual inline double getVelocity() const { return occupancy_; }
-    virtual inline FMState getState() const { return state_; }
-    virtual inline int getBucket() const { return bucket_; }
+    virtual inline double getArrivalTime() const
+    {
+        return value_;
+    }
+
+    virtual inline double getHeuristicValue() const
+    {
+        return hValue_;
+    }
+
+    virtual inline double getTotalValue() const
+    {
+        return value_ + hValue_;
+    }
+
+    virtual inline double getVelocity() const
+    {
+        return occupancy_;
+    }
+
+    virtual inline FMState getState() const
+    {
+        return state_;
+    }
+
+    virtual inline int getBucket() const
+    {
+        return bucket_;
+    }
 
 protected:
     /** \brief State of the cell. */

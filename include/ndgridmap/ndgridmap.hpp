@@ -103,9 +103,15 @@ public:
     }
 
     /** \brief Returns the leaf size of the grid. */
-    inline double getLeafSize() const { return leafsize_; }
+    inline double getLeafSize() const
+    {
+        return leafsize_;
+    }
 
-    inline void setLeafSize(const double leafsize) { leafsize_ = leafsize; }
+    inline void setLeafSize(const double leafsize)
+    {
+        leafsize_ = leafsize;
+    }
 
     /** \brief Returns the cell with index idx. */
     inline T &getCell(unsigned int idx)
@@ -114,7 +120,10 @@ public:
     }
 
     /** \brief Returns the size of each dimension. */
-    inline std::array<unsigned int, ndims> getDimSizes() const { return dimsize_; }
+    inline std::array<unsigned int, ndims> getDimSizes() const
+    {
+        return dimsize_;
+    }
 
     /** \brief Returns the minimum value of neighbors of cell idx in dimension dim. */
     double getMinValueInDim(unsigned int idx, unsigned int dim)

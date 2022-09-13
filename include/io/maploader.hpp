@@ -47,6 +47,7 @@ public:
         @param filename file to be open
         @param grid 2D nDGridmap
         @param init_points stores the indices of all the values which are false. */
+
     template <class T, size_t ndims>
     static void loadMapFromImg(const char *filename, nDGridMap<T, ndims> &grid)
     {
@@ -93,6 +94,7 @@ public:
         @param filename text file to be open
         @param grid 2D nDGridmap
         @param init_points stores the indices of all the values which are false. */
+
     template <class T, size_t ndims>
     static int loadMapFromText(const char *filename, nDGridMap<T, ndims> &grid)
     {

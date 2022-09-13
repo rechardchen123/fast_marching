@@ -39,7 +39,9 @@ public:
                                                                 nruns_(10),
                                                                 path_("results"),
                                                                 name_("benchmark"),
-                                                                fromCFG_(false) {}
+                                                                fromCFG_(false)
+    {
+    }
 
     virtual ~Benchmark()
     {
