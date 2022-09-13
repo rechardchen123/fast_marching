@@ -65,7 +65,10 @@ public:
         solver_ = new FMM<grid_t, heap_t>();
     }
 
-    virtual ~FM2() { clear(); }
+    virtual ~FM2()
+    {
+        clear();
+    }
 
     /** \brief Sets the environment to run the solver and sets the sources for the velocities map computation. */
     virtual void setEnvironment(grid_t *g)
