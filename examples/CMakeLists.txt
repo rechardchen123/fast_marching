@@ -1,0 +1,10 @@
+macro(build_example _name)
+  add_executable (${_name} ${_name}.cpp)
+  target_link_libraries (${_name} fast_methods)
+endmacro()
+
+build_example(full_example)
+build_example(test_fm)
+build_example(test_fm2)
+build_example(test_fmm3d)
+build_example(test_fm_benchmark)
