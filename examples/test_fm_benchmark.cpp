@@ -3,9 +3,7 @@
 #include <array>
 #include <iostream>
 
-#include "include/ndgridmap/fmcell.h"
-#include "include/ndgridmap/ndgridmap.hpp"
-
+#include "include/benchmark/benchmark.hpp"
 #include "include/datastructures/fmfibheap.hpp"
 #include "include/datastructures/fmpriorityqueue.hpp"
 #include "include/fm/ddqm.hpp"
@@ -18,8 +16,8 @@
 #include "include/fm/sfmm.hpp"
 #include "include/fm/sfmmstar.hpp"
 #include "include/fm/ufmm.hpp"
-
-#include "include/benchmark/benchmark.hpp"
+#include "include/ndgridmap/fmcell.h"
+#include "include/ndgridmap/ndgridmap.hpp"
 
 using namespace std;
 using namespace std::chrono;
