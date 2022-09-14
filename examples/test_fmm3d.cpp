@@ -3,12 +3,12 @@
 #include <array>
 #include <iostream>
 
-#include "include/ndgridmap/fmcell.h"
-#include "include/ndgridmap/ndgridmap.hpp"
+#include "../include/ndgridmap/fmcell.h"
+#include "../include/ndgridmap/ndgridmap.hpp"
 
-#include "include/fm/fmm.hpp"
-#include "include/io/gridwriter.hpp"
-#include "include/io/maploader.hpp"
+#include "../include/fm/fmm.hpp"
+#include "../include/io/gridwriter.hpp"
+#include "../include/io/maploader.hpp"
 
 using namespace std;
 using namespace std::chrono;

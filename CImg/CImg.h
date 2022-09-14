@@ -3287,14 +3287,14 @@ namespace cimg_library_suffixed {
     static Magick_static _Magick_static;
 #endif
 
-#if defined(cimg_use_fftw3) && !defined(cimg_use_fftw3_singlethread)
-    struct FFTW3_static {
-      FFTW3_static() {
-        fftw_init_threads();
-      }
-    }; // struct FFTW3_static { ...
-    static FFTW3_static _FFTW3_static;
-#endif
+// #if defined(cimg_use_fftw3) && !defined(cimg_use_fftw3_singlethread)
+//     struct FFTW3_static {
+//       FFTW3_static() {
+//         fftw_init_threads();
+//       }
+//     }; // struct FFTW3_static { ...
+//     static FFTW3_static _FFTW3_static;
+// #endif
 
 #if cimg_display==1
     // Define keycodes for X11-based graphical systems.

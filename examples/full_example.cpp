@@ -6,20 +6,20 @@
 #include <iostream>
 #include <string>
 
-#include "include/console/console.h"
-#include "include/datastructures/fmdaryheap.hpp"
-#include "include/datastructures/fmfibheap.hpp"
-#include "include/datastructures/fmpriorityqueue.hpp"
-#include "include/fm/fmm.hpp"
-#include "include/fm2/fm2.hpp"
-#include "include/fm2/fm2star.hpp"
-#include "include/gradientdescent/gradientdescent.hpp"
-#include "include/io/gridplotter.hpp"
-#include "include/io/gridpoints.hpp"
-#include "include/io/gridwriter.hpp"
-#include "include/io/maploader.hpp"
-#include "include/ndgridmap/fmcell.h"
-#include "include/ndgridmap/ndgridmap.hpp"
+#include "../include/console/console.h"
+#include "../include/datastructures/fmdaryheap.hpp"
+#include "../include/datastructures/fmfibheap.hpp"
+#include "../include/datastructures/fmpriorityqueue.hpp"
+#include "../include/fm/fmm.hpp"
+#include "../include/fm2/fm2.hpp"
+#include "../include/fm2/fm2star.hpp"
+#include "../include/gradientdescent/gradientdescent.hpp"
+#include "../include/io/gridplotter.hpp"
+#include "../include/io/gridpoints.hpp"
+#include "../include/io/gridwriter.hpp"
+#include "../include/io/maploader.hpp"
+#include "../include/ndgridmap/fmcell.h"
+#include "../include/ndgridmap/ndgridmap.hpp"
 
 using namespace std;
 using namespace std::chrono;

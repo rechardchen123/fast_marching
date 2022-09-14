@@ -24,20 +24,20 @@
 #include <boost/algorithm/string/case_conv.hpp>
 #include <boost/program_options.hpp>
 
-#include "benchmark/benchmark.hpp"
-#include "console/console.h"
-#include "io/maploader.hpp"
+#include "benchmark.hpp"
+#include "../console/console.h"
+#include "../io/maploader.hpp"
 
-#include "fm/ddqm.hpp"
-#include "fm/fim.hpp"
-#include "fm/fmm.hpp"
-#include "fm/fmmstar.hpp"
-#include "fm/fsm.hpp"
-#include "fm/gmm.hpp"
-#include "fm/lsm.hpp"
-#include "fm/sfmm.hpp"
-#include "fm/sfmmstar.hpp"
-#include "fm/ufmm.hpp"
+#include "../fm/ddqm.hpp"
+#include "../fm/fim.hpp"
+#include "../fm/fmm.hpp"
+#include "../fm/fmmstar.hpp"
+#include "../fm/fsm.hpp"
+#include "../fm/gmm.hpp"
+#include "../fm/lsm.hpp"
+#include "../fm/sfmm.hpp"
+#include "../fm/sfmmstar.hpp"
+#include "../fm/ufmm.hpp"
 
 // \todo the getter functions do not check if the types are admissible.
 /// \todo does not have support for multiple starts or goals.

@@ -31,8 +31,8 @@
 #ifndef UFMM_HPP_
 #define UFMM_HPP_
 
-#include "datastructures/fmuntidyqueue.hpp"
-#include "fm/eikonalsolver.hpp"
+#include "eikonalsolver.hpp"
+#include "../datastructures/fmuntidyqueue.hpp"
 
 template <class grid_t, class cell_t = FMCell>
 class UFMM : public EikonalSolver<grid_t>

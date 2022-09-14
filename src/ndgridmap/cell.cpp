@@ -1,5 +1,5 @@
-#include "include/console/console.h"
-#include "include/ndgridmap/cell.h"
+#include "../../include/ndgridmap/cell.h"
+#include "../../include/console/console.h"
 
 using namespace std;
 

@@ -1,6 +1,6 @@
 /*! \file FMDirectionalcell.h
     \brief Header of the FMDirectionalCell class
-    
+
     A stand-alone, standard C++ class which represents each one of the cells
     of a gridmap and its typical members. Inherited from Cell class, in this
     case the value_ member represents the distance value (or time of arrival).
@@ -25,35 +25,35 @@
 #define FMDIRECTIONALCELL_H_
 
 #include <iostream>
-#include <string>
 #include <limits>
+#include <string>
 
-#include "../../ndgridmap/cell.h"
-#include "fmcell.h"
+#include "../include/ndgridmap/cell.h"
+#include "../include/ndgridmap/fmcell.h"
 
-class FMDirectionalCell : public FMCell{
-      /**
-       * ostream operator << overloaded for this class.
-       */
-    friend std::ostream& operator << (std::ostream & os, const FMDirectionalCell & c);
+class FMDirectionalCell : public FMCell
+{
+    /**
+     * ostream operator << overloaded for this class.
+     */
+    friend std::ostream &operator<<(std::ostream &os, const FMDirectionalCell &c);
 
-    public:
-        /**
-         * Default constructor which performs and implicit Fast Marching-like initialization of the grid,
-         */
-        FMDirectionalCell() : FMCell() {}
+public:
+    /**
+     * Default constructor which performs and implicit Fast Marching-like initialization of the grid,
+     */
+    FMDirectionalCell() : FMCell() {}
 
-        virtual ~FMDirectionalCell() {}
-        
-        // NOTE: no checks are done (out of bounds, correct states, etc) no improve efficienty.
-        // TODO: overload functions to add the option of input checking.
-        virtual void setDirectionalTime (const double dir_time) { dir_time_= dir_time; }
+    virtual ~FMDirectionalCell() {}
 
-        virtual double getDirectionalTime () const                {return dir_time_;}
+    // NOTE: no checks are done (out of bounds, correct states, etc) no improve efficienty.
+    // TODO: overload functions to add the option of input checking.
+    virtual void setDirectionalTime(const double dir_time) { dir_time_ = dir_time; }
 
-    protected:
+    virtual double getDirectionalTime() const { return dir_time_; }
 
-        double dir_time_;
+protected:
+    double dir_time_;
 };
 
 #endif /* FMDIRECTIONALCELL_H_*/

@@ -39,6 +39,7 @@ endif()
 include_directories (
     ${Boost_INCLUDE_DIRS}
     ${CImg_INCLUDE_DIRS}
+    include
 )
 
 # Create main library

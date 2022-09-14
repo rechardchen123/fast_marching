@@ -36,10 +36,10 @@
 #include <iostream>
 #include <numeric>
 
-#include "fm/fmm.hpp"
+#include "fmm.hpp"
 
-#include "datastructures/fmpriorityqueue.hpp"
-#include "ndgridmap/fmcell.h"
+#include "../datastructures/fmpriorityqueue.hpp"
+#include "../ndgridmap/fmcell.h"
 
 template <class grid_t, class cell_t = FMCell>
 class SFMM : public FMM<grid_t, FMPriorityQueue<cell_t>>

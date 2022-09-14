@@ -50,13 +50,13 @@
 #include <iostream>
 #include <numeric>
 
-#include "fm/eikonalsolver.hpp"
+#include "eikonalsolver.hpp"
 
-#include "datastructures/fmdaryheap.hpp"
-#include "ndgridmap/fmcell.h"
+#include "../datastructures/fmdaryheap.hpp"
+#include "../ndgridmap/fmcell.h"
 
-#include "console/console.h"
-#include "ndgridmap/ndgridmap.hpp"
+#include "../console/console.h"
+#include "../ndgridmap/ndgridmap.hpp"
 
 /** \brief Heuristic strategy to be used. TIME = DISTANCE/local velocity. */
 enum HeurStrategy

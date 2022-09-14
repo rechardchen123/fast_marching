@@ -27,7 +27,7 @@
 #include <limits>
 #include <string>
 
-#include "ndgridmap/cell.h"
+#include "cell.h"
 
 /** \brief Possible states of the FMCells*/
 enum class FMState

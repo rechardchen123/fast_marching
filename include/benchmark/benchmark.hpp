@@ -21,13 +21,14 @@
 #define BENCHMARK_HPP_
 
 #include <chrono>
+#include <iomanip>
 #include <limits>
 
 #include <boost/filesystem.hpp>
 #include <boost/progress.hpp>
 
-#include "fm/solver.hpp"
-#include "io/gridwriter.hpp"
+#include "../fm/solver.hpp"
+#include "../io/gridwriter.hpp"
 
 template <class grid_t>
 class Benchmark

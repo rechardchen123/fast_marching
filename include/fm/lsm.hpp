@@ -32,9 +32,9 @@
 #ifndef LSM_HPP_
 #define LSM_HPP_
 
-#include "fm/fsm.hpp"
-#include "ndgridmap/fmcell.h"
-#include "utils/utils.h"
+#include "fsm.hpp"
+#include "../ndgridmap/fmcell.h"
+#include "../utils/utils.h"
 
 /// \todo implement a more robust goal point stopping criterion.
 template <class grid_t>

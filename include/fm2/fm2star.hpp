@@ -40,10 +40,10 @@
 #include <limits>
 #include <numeric>
 
-#include "fm/fmm.hpp"
-#include "fm2/fm2.hpp"
-#include "gradientdescent/gradientdescent.hpp"
-#include "ndgridmap/fmcell.h"
+#include "fm2.hpp"
+#include "../fm/fmm.hpp"
+#include "../gradientdescent/gradientdescent.hpp"
+#include "../ndgridmap/fmcell.h"
 
 /// \todo Include support to other solvers (GMM, FIM, UFMM). Requires theoretical work on heuristics on these methods.
 // template < class grid_t, class solver_t = FMM<grid_t> > class FM2Star : public FM2<grid_t> {

@@ -3,23 +3,23 @@
 #include <array>
 #include <iostream>
 
-#include "include/ndgridmap/fmcell.h"
-#include "include/ndgridmap/ndgridmap.hpp"
+#include "../include/ndgridmap/fmcell.h"
+#include "../include/ndgridmap/ndgridmap.hpp"
 
-#include "include/datastructures/fmfibheap.hpp"
-#include "include/datastructures/fmpriorityqueue.hpp"
-#include "include/fm/ddqm.hpp"
-#include "include/fm/fim.hpp"
-#include "include/fm/fmm.hpp"
-#include "include/fm/fmmstar.hpp"
-#include "include/fm/fsm.hpp"
-#include "include/fm/gmm.hpp"
-#include "include/fm/lsm.hpp"
-#include "include/fm/sfmm.hpp"
-#include "include/fm/sfmmstar.hpp"
-#include "include/fm/ufmm.hpp"
+#include "../include/datastructures/fmfibheap.hpp"
+#include "../include/datastructures/fmpriorityqueue.hpp"
+#include "../include/fm/ddqm.hpp"
+#include "../include/fm/fim.hpp"
+#include "../include/fm/fmm.hpp"
+#include "../include/fm/fmmstar.hpp"
+#include "../include/fm/fsm.hpp"
+#include "../include/fm/gmm.hpp"
+#include "../include/fm/lsm.hpp"
+#include "../include/fm/sfmm.hpp"
+#include "../include/fm/sfmmstar.hpp"
+#include "../include/fm/ufmm.hpp"
 
-#include "include/io/gridplotter.hpp"
+#include "../include/io/gridplotter.hpp"
 
 using namespace std;
 using namespace std::chrono;

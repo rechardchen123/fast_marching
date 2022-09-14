@@ -50,13 +50,13 @@
 #include <iostream>
 #include <numeric>
 
-#include "fm/fmm.hpp"
+#include "fmm.hpp"
 
-#include "datastructures/fmdaryheap.hpp"
-#include "ndgridmap/fmcell.h"
+#include "../datastructures/fmdaryheap.hpp"
+#include "../ndgridmap/fmcell.h"
 
-#include "console/console.h"
-#include "ndgridmap/ndgridmap.hpp"
+#include "../console/console.h"
+#include "../ndgridmap/ndgridmap.hpp"
 
 template <class grid_t, class heap_t = FMDaryHeap<FMCell>>
 class FMMStar : public FMM<grid_t, heap_t>

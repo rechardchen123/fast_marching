@@ -33,8 +33,8 @@
 
 #include <algorithm>
 
-#include "fm/eikonalsolver.hpp"
-#include "utils/utils.h"
+#include "eikonalsolver.hpp"
+#include "../utils/utils.h"
 
 /// \todo implement a more robust goal point stopping criterion.
 template <class grid_t>

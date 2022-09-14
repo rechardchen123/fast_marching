@@ -25,9 +25,9 @@
 #include <vector>
 
 // #include <CImg.h>
-#include "../../../CImg/CImg.h"
+#include "../../CImg/CImg.h"
 
-#include "ndgridmap/ndgridmap.hpp"
+#include "../ndgridmap/ndgridmap.hpp"
 
 using namespace cimg_library;
 

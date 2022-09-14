@@ -39,7 +39,7 @@
 
 #include <utility>
 
-#include "console/console.h"
+#include "../console/console.h"
 
 /// \todo Neighbors precomputation could speed things up.
 /// \todo Improve coord2idx function in order to just pass n coordinates and not an array.

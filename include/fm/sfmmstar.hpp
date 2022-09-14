@@ -36,7 +36,7 @@
 #include <iostream>
 #include <numeric>
 
-#include "fm/sfmm.hpp"
+#include "sfmm.hpp"
 
 template <class grid_t, class cell_t = FMCell>
 class SFMMStar : public SFMM<grid_t, cell_t>

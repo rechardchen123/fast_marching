@@ -30,8 +30,8 @@
 
 #include <list>
 
-#include "fm/eikonalsolver.hpp"
-#include "utils/utils.h"
+#include "eikonalsolver.hpp"
+#include "../utils/utils.h"
 
 template <class grid_t>
 class FIM : public EikonalSolver<grid_t>

@@ -27,7 +27,7 @@
 #include <limits>
 #include <string>
 
-#include "utils/utils.h"
+#include "../utils/utils.h"
 
 /// \todo No checks are done (out of bounds, etc) to improve efficienty. Overload functions to add optional input checking.
 class Cell

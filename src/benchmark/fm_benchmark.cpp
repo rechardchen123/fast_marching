@@ -19,20 +19,20 @@
 
 #include <boost/variant.hpp>
 
-#include "include/ndgridmap/fmcell.h"
-#include "include/ndgridmap/ndgridmap.hpp"
+#include "../../include/ndgridmap/fmcell.h"
+#include "../../include/ndgridmap/ndgridmap.hpp"
 
-#include "include/fm/fim.hpp"
-#include "include/fm/fmm.hpp"
-#include "include/fm/gmm.hpp"
-#include "include/fm/ufmm.hpp"
+#include "../../include/fm/fim.hpp"
+#include "../../include/fm/fmm.hpp"
+#include "../../include/fm/gmm.hpp"
+#include "../../include/fm/ufmm.hpp"
 
-#include "include/datastructures/fmdaryheap.hpp"
-#include "include/datastructures/fmfibheap.hpp"
-#include "include/datastructures/fmpriorityqueue.hpp"
+#include "../../include/datastructures/fmdaryheap.hpp"
+#include "../../include/datastructures/fmfibheap.hpp"
+#include "../../include/datastructures/fmpriorityqueue.hpp"
 
-#include "include/benchmark/benchmark.hpp"
-#include "include/benchmark/benchmarkcfg.hpp"
+#include "../../include/benchmark/benchmark.hpp"
+#include "../../include/benchmark/benchmarkcfg.hpp"
 
 using namespace std;
 

@@ -22,7 +22,7 @@
 
 #include <fstream>
 
-#include "ndgridmap/ndgridmap.hpp"
+#include "../ndgridmap/ndgridmap.hpp"
 
 // TODO: include checks which ensure that the grids are adecuate for the functions used.
 // TODO: there should be a check when writing grid: it is written already? erase and write. Something like that.

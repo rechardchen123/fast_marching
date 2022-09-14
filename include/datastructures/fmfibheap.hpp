@@ -22,7 +22,7 @@
 
 #include <boost/heap/fibonacci_heap.hpp>
 
-#include "datastructures/fmcompare.hpp"
+#include "fmcompare.hpp"
 
 /// \note for memory efficiency, use map instead of vector for handles_.
 template <class cell_t = FMCell>

@@ -27,8 +27,8 @@
 #include <numeric>
 #include <vector>
 
-#include "ndgridmap/fmcell.h"
-#include "ndgridmap/ndgridmap.hpp"
+#include "../ndgridmap/fmcell.h"
+#include "../ndgridmap/ndgridmap.hpp"
 
 /// \todo Check if points fall in obstacles, points in the borders, etc.
 
@@ -77,7 +77,9 @@ public:
         std::array<unsigned int, ndims_ - 1> d_; //  Same as nDGridMap class auxiliar array d_.
         d_[0] = dimsize[0];
         for (size_t i = 1; i < ndims_; ++i)
+        {
             d_[i] = dimsize[i] * d_[i - 1];
+        }
 
         grid.idx2coord(idx, current_coord);
         std::copy_n(current_coord.begin(), ndims_, current_point.begin()); // Cast to int.

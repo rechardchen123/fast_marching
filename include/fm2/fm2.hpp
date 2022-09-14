@@ -40,8 +40,8 @@
 #include <limits>
 #include <numeric>
 
-#include "fm/fmm.hpp"
-#include "gradientdescent/gradientdescent.hpp"
+#include "../fm/fmm.hpp"
+#include "../gradientdescent/gradientdescent.hpp"
 
 /// \todo Include support to other solvers (GMM, FIM, UFMM). It requires a better way of setting parameters.
 // template < class grid_t, class solver_t = FMM<grid_t> > class FM2 : public Solver<grid_t> {

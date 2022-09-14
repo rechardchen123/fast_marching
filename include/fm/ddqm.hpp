@@ -31,9 +31,9 @@
 
 #include <queue>
 
-#include "fm/eikonalsolver.hpp"
-#include "ndgridmap/fmcell.h"
-#include "utils/utils.h"
+#include "eikonalsolver.hpp"
+#include "../ndgridmap/fmcell.h"
+#include "../utils/utils.h"
 
 /// \todo implement a more robust goal point stopping criterion.
 template <class grid_t>

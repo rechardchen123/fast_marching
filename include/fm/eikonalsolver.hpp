@@ -33,8 +33,8 @@
 
 #include <boost/concept_check.hpp>
 
-#include "console/console.h"
-#include "fm/solver.hpp"
+#include "solver.hpp"
+#include "../console/console.h"
 
 template <class grid_t>
 class EikonalSolver : public Solver<grid_t>

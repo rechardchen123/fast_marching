@@ -20,8 +20,8 @@
 #ifndef FMUNTIDYQUEUE_HPP_
 #define FMUNTIDYQUEUE_HPP_
 
-#include "ndgridmap/fmcell.h"
-#include "thirdparty/untidy_queue.hpp"
+#include "../ndgridmap/fmcell.h"
+#include "../thirdparty/untidy_queue.hpp"
 
 /// \todo save buckets here as a hash table instead of saving them in FMCell.
 template <class cell_t = FMCell>

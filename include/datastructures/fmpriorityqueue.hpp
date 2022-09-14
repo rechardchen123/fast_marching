@@ -22,7 +22,7 @@
 
 #include <boost/heap/priority_queue.hpp>
 
-#include "datastructures/fmcompare.hpp"
+#include "fmcompare.hpp"
 
 template <class cell_t = FMCell>
 class FMPriorityQueue

@@ -28,7 +28,7 @@
 #ifndef GMM_HPP_
 #define GMM_HPP_
 
-#include "fm/eikonalsolver.hpp"
+#include "eikonalsolver.hpp"
 
 template <class grid_t>
 class GMM : public EikonalSolver<grid_t>
