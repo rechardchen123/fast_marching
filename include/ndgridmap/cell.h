@@ -68,9 +68,20 @@ public:
         occupancy_ is not modified. */
     virtual void setDefault();
 
-    virtual inline double getValue() const { return value_; }
-    virtual inline double getOccupancy() const { return occupancy_; }
-    virtual inline unsigned int getIndex() const { return index_; }
+    virtual inline double getValue() const
+    {
+        return value_;
+    }
+
+    virtual inline double getOccupancy() const
+    {
+        return occupancy_;
+    }
+
+    virtual inline unsigned int getIndex() const
+    {
+        return index_;
+    }
 
     virtual inline bool isOccupied() const
     {

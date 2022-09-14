@@ -136,6 +136,7 @@ public:
                     continue;
                 else
                 {
+                    // call Eikonal Solver to calculate the new equation value.
                     double new_arrival_time = solveEikonal(j);
 
                     // Include heuristics if necessary.

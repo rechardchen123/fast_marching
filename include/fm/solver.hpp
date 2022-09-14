@@ -40,11 +40,18 @@ template <class grid_t>
 class Solver
 {
 public:
-    Solver() : name_("GenericSolver"), setup_(false) {}
+    Solver() : name_("GenericSolver"), setup_(false)
+    {
+    }
 
-    Solver(const std::string &name) : name_(name), setup_(false) {}
+    Solver(const std::string &name) : name_(name), setup_(false)
+    {
+    }
 
-    virtual ~Solver() { clear(); }
+    virtual ~Solver()
+    {
+        clear();
+    }
 
     /** \brief Sets and cleans the grid in which operations will be performed. */
     virtual void setEnvironment(grid_t *g)
@@ -67,7 +74,8 @@ public:
     }
 
     /** \brief Sets the initial and goal points by the coordinates of the grid. */
-    virtual void setInitialAndGoalPoints(const std::array<unsigned int, grid_t::getNDims()> &init_coord, const std::array<unsigned int, grid_t::getNDims()> &goal_coord)
+    virtual void setInitialAndGoalPoints(const std::array<unsigned int, grid_t::getNDims()> &init_coord,
+                                         const std::array<unsigned int, grid_t::getNDims()> &goal_coord)
     {
         std::vector<unsigned int> init_points;
         unsigned int idx;

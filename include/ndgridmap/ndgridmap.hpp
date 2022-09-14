@@ -341,7 +341,10 @@ public:
     }
 
     /** \brief Makes the number of dimensions of the grid available at compilation time. */
-    static constexpr size_t getNDims() { return ndims; }
+    static constexpr size_t getNDims()
+    {
+        return ndims;
+    }
 
     /** \brief Returns the avegare velocity ignoring those with 0 velocitie (obstacles). */
     double getAvgSpeed()
