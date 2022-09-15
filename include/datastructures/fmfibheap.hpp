@@ -35,11 +35,19 @@ class FMFibHeap
     typedef typename fib_heap_t::handle_type handle_t;
 
 public:
-    FMFibHeap() {}
+    FMFibHeap()
+    {
+    }
 
     /** \brief Creates a heap with n maximum elements. */
-    FMFibHeap(const size_t &n) { handles_.resize(n); }
-    virtual ~FMFibHeap() {}
+    FMFibHeap(const size_t &n)
+    {
+        handles_.resize(n);
+    }
+
+    virtual ~FMFibHeap()
+    {
+    }
 
     /** \brief Sets the maximum number of cells the heap will contain. */
     void setMaxSize(const size_t &n)

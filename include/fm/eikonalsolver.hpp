@@ -40,8 +40,13 @@ template <class grid_t>
 class EikonalSolver : public Solver<grid_t>
 {
 public:
-    EikonalSolver() : Solver<grid_t>("EikonalSolver") {}
-    EikonalSolver(const std::string &name) : Solver<grid_t>(name) {}
+    EikonalSolver() : Solver<grid_t>("EikonalSolver")
+    {
+    }
+
+    EikonalSolver(const std::string &name) : Solver<grid_t>(name)
+    {
+    }
 
     /** \brief Solves nD Eikonal equation for cell idx. If heuristics are activated, it will add
         the estimated travel time to goal with current velocity. */

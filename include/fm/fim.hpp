@@ -37,10 +37,18 @@ template <class grid_t>
 class FIM : public EikonalSolver<grid_t>
 {
 public:
-    FIM(double error = 0) : EikonalSolver<grid_t>("FIM"), E_(error) {}
-    FIM(const char *name, double error = 0) : EikonalSolver<grid_t>(name), E_(error) {}
+    FIM(double error = 0) : EikonalSolver<grid_t>("FIM"), E_(error)
+    {
+    }
 
-    virtual ~FIM() { clear(); }
+    FIM(const char *name, double error = 0) : EikonalSolver<grid_t>(name), E_(error)
+    {
+    }
+
+    virtual ~FIM()
+    {
+        clear();
+    }
 
     /** \brief Actual method that implements FIM. */
     virtual void computeInternal()

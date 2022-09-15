@@ -35,12 +35,20 @@ class FMDaryHeap
     typedef typename d_ary_heap_t::handle_type handle_t;
 
 public:
-    FMDaryHeap() {}
+    FMDaryHeap()
+    {
+    }
 
     /** \brief Creates a heap with n maximum elements. */
-    FMDaryHeap(const size_t &n) { handles_.resize(n); }
+    FMDaryHeap(const size_t &n)
+    {
+        handles_.resize(n);
+    }
 
-    virtual ~FMDaryHeap() { clear(); }
+    virtual ~FMDaryHeap()
+    {
+        clear();
+    }
 
     /** \brief Sets the maximum number of cells the heap will contain. */
     void setMaxSize(const size_t &n)

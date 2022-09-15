@@ -42,8 +42,13 @@ template <class grid_t, class cell_t = FMCell>
 class SFMMStar : public SFMM<grid_t, cell_t>
 {
 public:
-    SFMMStar(HeurStrategy h = TIME) : SFMM<grid_t, cell_t>("SFMM*", h) {}
-    SFMMStar(const char *name, HeurStrategy h = TIME) : SFMM<grid_t, cell_t>(name, h) {}
+    SFMMStar(HeurStrategy h = TIME) : SFMM<grid_t, cell_t>("SFMM*", h)
+    {
+    }
+
+    SFMMStar(const char *name, HeurStrategy h = TIME) : SFMM<grid_t, cell_t>(name, h)
+    {
+    }
 };
 
 #endif /* SFMMSTAR_HPP_*/

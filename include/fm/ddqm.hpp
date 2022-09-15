@@ -40,7 +40,9 @@ template <class grid_t>
 class DDQM : public EikonalSolver<grid_t>
 {
 public:
-    DDQM(const char *name = "DDQM") : EikonalSolver<grid_t>(name) {}
+    DDQM(const char *name = "DDQM") : EikonalSolver<grid_t>(name)
+    {
+    }
 
     /** \brief Calls EikonalSolver::setEnvironment() and sets the initial threshold. */
     virtual void setEnvironment(grid_t *g)

@@ -34,7 +34,10 @@ public:
         queue_ = new levelset::PriorityQueue<const cell_t *>(s, inc);
     }
 
-    virtual ~FMUntidyQueue() { delete queue_; }
+    virtual ~FMUntidyQueue()
+    {
+        delete queue_;
+    }
 
     /** \brief Pushes a new element into the heap. */
     void push(cell_t *c)

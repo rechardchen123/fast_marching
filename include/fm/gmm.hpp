@@ -34,11 +34,18 @@ template <class grid_t>
 class GMM : public EikonalSolver<grid_t>
 {
 public:
-    GMM(double dt = -1) : EikonalSolver<grid_t>("GMM"), deltau_(dt) {}
+    GMM(double dt = -1) : EikonalSolver<grid_t>("GMM"), deltau_(dt)
+    {
+    }
 
-    GMM(const char *name, double dt = -1) : EikonalSolver<grid_t>(name), deltau_(dt) {}
+    GMM(const char *name, double dt = -1) : EikonalSolver<grid_t>(name), deltau_(dt)
+    {
+    }
 
-    virtual ~GMM() { clear(); }
+    virtual ~GMM()
+    {
+        clear();
+    }
 
     void setup()
     {

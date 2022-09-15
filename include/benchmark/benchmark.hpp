@@ -113,7 +113,9 @@ public:
             boost::filesystem::create_directory(path_ / name_);
         }
         else if (saveLog_)
+        {
             boost::filesystem::create_directory(path_);
+        }
 
         boost::progress_display showProgress(solvers_.size() * nruns_);
 
@@ -136,12 +138,16 @@ public:
                 ++showProgress;
             }
             if (saveGrid_ == 1)
+            {
                 saveGrid(s);
+            }
             s->reset();
         }
 
         if (saveLog_)
+        {
             saveLog();
+        }
         else
         {
             console::info("Benchmark log format:");

@@ -28,12 +28,19 @@ template <class cell_t = FMCell>
 class FMPriorityQueue
 {
 public:
-    FMPriorityQueue() {}
+    FMPriorityQueue()
+    {
+    }
 
     /** \brief Shorthand for heap element handle type. */
-    FMPriorityQueue(const int &n) { heap_.reserve(n); }
+    FMPriorityQueue(const int &n)
+    {
+        heap_.reserve(n);
+    }
 
-    virtual ~FMPriorityQueue() {}
+    virtual ~FMPriorityQueue()
+    {
+    }
 
     /** \brief Sets the maximum number of cells the heap will contain. */
     void setMaxSize(const int &n)

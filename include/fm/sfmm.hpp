@@ -44,7 +44,7 @@
 template <class grid_t, class cell_t = FMCell>
 class SFMM : public FMM<grid_t, FMPriorityQueue<cell_t>>
 {
-    /** \brief Shorthand for base solver. */
+    /** \brief Shorthand for base solver. and there is no any new data types added.*/
     typedef FMM<grid_t, FMPriorityQueue<cell_t>> FMMBase;
 
 public:

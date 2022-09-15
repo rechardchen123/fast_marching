@@ -41,9 +41,13 @@ template <class grid_t>
 class LSM : public FSM<grid_t>
 {
 public:
-    LSM(unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : FSM<grid_t>("LSM", maxSweeps) {}
+    LSM(unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : FSM<grid_t>("LSM", maxSweeps)
+    {
+    }
 
-    LSM(const char *name, unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : FSM<grid_t>(name, maxSweeps) {}
+    LSM(const char *name, unsigned maxSweeps = std::numeric_limits<unsigned>::max()) : FSM<grid_t>(name, maxSweeps)
+    {
+    }
 
     /** \brief Actual method that implements LSM. */
     virtual void computeInternal()
