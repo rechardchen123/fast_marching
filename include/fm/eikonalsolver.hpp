@@ -35,6 +35,7 @@
 
 #include "solver.hpp"
 #include "../console/console.h"
+#include "../utils/utils.h"
 
 template <class grid_t>
 class EikonalSolver : public Solver<grid_t>

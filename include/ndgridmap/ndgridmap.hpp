@@ -64,7 +64,9 @@ class nDGridMap
     }
 
 public:
-    nDGridMap() : leafsize_(1.0f), clean_(true) {}
+    nDGridMap() : leafsize_(1.0f), clean_(true)
+    {
+    }
 
     /** @param dimsize constains the size of each dimension.
         @param leafsize real cell size (assumed to be cubic). 1 unit by default. */
