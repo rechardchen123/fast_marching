@@ -97,7 +97,7 @@ protected:
     /** \brief Binary occupancy, true means clear, false occupied. */
     double occupancy_;
 
-    /** \briefbIndex within the grid. Useful when used in heaps. */
+    /** \brief Index within the grid. Useful when used in heaps. */
     unsigned int index_;
 };
 

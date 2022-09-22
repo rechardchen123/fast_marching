@@ -67,7 +67,7 @@ public:
         // Filling the image flipping Y dim. We want now top left to be the (0,0).
         cimg_forXY(img, x, y)
         {
-            img(x, y) = !grid[img.width() * (img.height() - y - 1) + x].isOccupied();
+            img(x, y) = !grid[img.width() * (img.height() - y - 1) + x].isOccupied(); // !: the logical operator for the Boolean operation NOT.
         }
 
         // Code for not-inverted Y axis.
