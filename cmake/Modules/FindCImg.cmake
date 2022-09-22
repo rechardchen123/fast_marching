@@ -19,6 +19,13 @@ find_path(CImg_INCLUDE_DIR
 )
 mark_as_advanced(CImg_INCLUDE_DIR)
 
+# find_path(CImg_INCLUDE_DIR
+#   NAMES CImg.h
+#   PATHS /home/chenjiusi/Documents/fast_marching/CImg
+# )
+# mark_as_advanced(CImg_INCLUDE_DIR)
+# message("*******************  ${CImg_INCLUDE_DIR}")
+
 if (CImg_INCLUDE_DIR)
   set(CImg_FOUND TRUE)
 endif(CImg_INCLUDE_DIR)
